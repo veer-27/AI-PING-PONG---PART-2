@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+       <center>
+        <title>AI Ping Pong Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="AI-PING-PONG_style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+        
+    </head>
+    <body background="AI-PING-PONG_background1.jpg">
+
+        <div class="btn btn-warning heading">
+            <h3>AI PING-PONG</h3>
+
+            <button class="btn btn-success" data-toggle="modal" data-target="#my_modal">Instruction</button>
+        </div>
+        <button class="btn btn-info" onclick="start()" id="start_game">Start Game</button>
+       <br>
+       <h3 class="status_label" id="status"></h3>
+
+       <div id="canvas"></div>
+       <br>
+       <br>
+       <button class="btn btn-primary" id="restart_btn" onclick="restart()">Restart</button>
+       <div id="my_modal" class="modal fade">
+
+        <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <button modal-dismiss="close" data-dismiss="modal">&times;</button>
+            <h3>Instruction</h3>
+        </div>
+        <div class="modal-body">
+            <ol>
+                <li>First Keep Your Laptop Screen Straight</li>
+                <li>Move Yourself Approximately 3-4 Feet Away From The Laptop</li>
+                <li>Move Your Right Wrist In An Ascending And Decending Manner , A Red Dot Should Be Appear On Your RIGHT Wrist</li>
+                <li>Now Press The Play Button, and again move yourself 3-4 feet away from laptop </li>
+                <li>The red paddel is your paddel , That will Move as per as the movement of your right wrist</li>
+            </ol>
+        </div>
+        </div>
+    </div>
+       </div>
+       <br><br>
+       <div class="footer">
+        Devloped By : Veer Pratap Singh
+       </div>
+
+        <script src="AI-PING-PONG_main.js"></script>
+  
+    </center>
+          </body>
+    </head>
+    </body>
+</html>
